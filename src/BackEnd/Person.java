@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package BackEnd;
+package Backend;
 
 import java.time.LocalDate;
 import java.util.Date;
@@ -15,7 +15,7 @@ public class Person {
     int Person_id;
     String FirstName;
     String LastName;
-    LocalDate DOB;
+  
 
     public int getPerson_id() {
         return Person_id;
@@ -25,11 +25,11 @@ public class Person {
         this.Person_id = Person_id;
     }
 
-    public Person(int Person_id, String FirstName, String LastName, LocalDate DOB) {
+    public Person(int Person_id, String FirstName, String LastName) {
         this.Person_id = Person_id;
         this.FirstName = FirstName;
         this.LastName = LastName;
-        this.DOB = DOB;
+       
     }
     
 
@@ -49,14 +49,7 @@ public class Person {
         this.LastName = LastName;
     }
 
-    public LocalDate getDOB() {
-        return DOB;
-    }
-
-    public void setDOB(LocalDate DOB) {
-        this.DOB = DOB;
-    }
-
+    
   
     
 }

@@ -11,11 +11,25 @@ package BackEnd;
 public class Login {
     String loginas;
     String username;
+    String companyname;
 
-    public Login(String loginas, String username, String password) {
+    public Login(String companyname) {
+        this.companyname = companyname;
+    }
+
+    public String getCompanyname() {
+        return companyname;
+    }
+
+    public void setCompanyname(String companyname) {
+        this.companyname = companyname;
+    }
+
+    public Login(String loginas, String username, String password, String companyname) {
         this.loginas = loginas;
         this.username = username;
         this.password = password;
+        this.companyname = companyname;
     }
 
     public String getLoginas() {
